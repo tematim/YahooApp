@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:orientation="vertical">
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Code postal : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0" />
+                <EditText
+                    android:minWidth="50px"
+                    android:minHeight="25px"
+                    android:id="@+id/editText1"
+                    android:layout_column="1"
+                    android:layout_width="149.5dp" />
+                <Button
+                    android:text="Mettre à jour"
+                    android:id="@+id/button1" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:text="Météo actuelle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ResultsTitle"
+            android:textColor="#FFFF4D" />
+        <TableLayout
+            android:id="@+id/ResultsTable"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="Temp : "
+                    android:layout_column="0"
+                    android:id="@+id/textView1" />
+                <TextView
+                    android:text="31"
+                    android:layout_column="1"
+                    android:id="@+id/textViewTemp"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="°C"
+                    android:layout_column="2"
+                    android:id="@+id/textView2" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2">
+                <TextView
+                    android:text="Vent : "
+                    android:layout_column="0"
+                    android:id="@+id/textView3" />
+                <TextView
+                    android:text="10"
+                    android:layout_column="1"
+                    android:id="@+id/textViewWind"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=" km/h"
+                    android:layout_column="2"
+                    android:id="@+id/textView4" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3">
+                <TextView
+                    android:text="Humidité : "
+                    android:layout_column="0"
+                    android:id="@+id/textView5" />
+                <TextView
+                    android:text="31"
+                    android:layout_column="1"
+                    android:id="@+id/textViewHumid"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="%"
+                    android:layout_column="2"
+                    android:id="@+id/textView6" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4">
+                <TextView
+                    android:text="Visibilité : "
+                    android:layout_column="0"
+                    android:id="@+id/textView7" />
+                <TextView
+                    android:text="10"
+                    android:layout_column="1"
+                    android:id="@+id/textViewVisibility"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="km"
+                    android:layout_column="2"
+                    android:id="@+id/textView8" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5">
+                <TextView
+                    android:text="Levé soleil : "
+                    android:layout_column="0"
+                    android:id="@+id/textView9" />
+                <TextView
+                    android:text="6h55"
+                    android:layout_column="1"
+                    android:id="@+id/textViewSunrise"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6">
+                <TextView
+                    android:text="Couché soleil : "
+                    android:layout_column="0"
+                    android:id="@+id/textView10" />
+                <TextView
+                    android:text="22h30"
+                    android:layout_column="1"
+                    android:id="@+id/textViewSunset"
+                    android:textColor="#FFFF4D"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="City" />
+    </LinearLayout>
+</LinearLayout>
