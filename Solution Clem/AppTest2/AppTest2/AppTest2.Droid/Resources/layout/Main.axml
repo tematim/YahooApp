@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minHeight="25px"
+    android:minWidth="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="548.0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="City Name" />
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteText"
+                android:layout_width="150dp"
+                android:layout_height="31.5dp" />
+            <Button
+                android:text="Update !"
+                android:layout_height="44.0dp"
+                android:layout_width="137.5dp"
+                android:id="@+id/ButtonSubmit"
+                android:onClick="SubmitCodePostal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="97.5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Meteo Actuelle"
+                android:id="@+id/ResultTitle" />
+            <TableLayout
+                android:id="@+id/ResultsTable"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TableRow1">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:text="Temp : "
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewTemp"
+                        android:layout_width="wrap_content"
+                        android:text="10"
+                        android:layout_column="1"
+                        android:color="#FFFF4D" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:text="°C"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:color="#FFFF4D" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TableRow2">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView3"
+                        android:text="Wind : "
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textViewWind"
+                        android:text="10"
+                        android:layout_column="1"
+                        android:color="#FFFF4D" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView4"
+                        android:text="Km/h"
+                        android:layout_column="2"
+                        android:color="#FFFF4D" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TableRow3">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView5"
+                        android:text="Humidity : "
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textViewHumidity"
+                        android:text="10"
+                        android:layout_column="1"
+                        android:color="#FFFF4D" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView6"
+                        android:text="%"
+                        android:layout_column="2"
+                        android:color="#FFFF4D" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TableRow4">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView7"
+                        android:text="Visibility : "
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textViewVisibility"
+                        android:text="10"
+                        android:layout_column="1"
+                        android:color="#FFFF4D" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView8"
+                        android:text="%"
+                        android:layout_column="2"
+                        android:color="#FFFF4D" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TableRow5">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView9"
+                        android:text="Sun : "
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textViewSun"
+                        android:text="10"
+                        android:layout_column="1"
+                        android:color="#FFFF4D" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView10"
+                        android:text="%"
+                        android:layout_column="2"
+                        android:color="#FFFF4D" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/ImageWeather" />
+    </LinearLayout>
+</LinearLayout>
